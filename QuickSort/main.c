@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 void QuickSort();
-
+ 
 int main(){
 	int data[] = {45,84,77,83,55,49,91,64,91,5,37,31,70,38,51};
 	int n = 15;
