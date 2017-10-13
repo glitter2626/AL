@@ -32,9 +32,9 @@ class PID{
 			this->Ki = Ki;	
 		}
 
-		double execute(double value){
+		double execute(double value, double feedback){
 		
-			e = value;
+			e = value - feedback;
 			e_dot = e - old_e;
 			E = E + e;
 			u = Kp * e + Kd * e_dot + Ki * E;
